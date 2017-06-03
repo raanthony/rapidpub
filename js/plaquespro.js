@@ -360,10 +360,12 @@ $(function() {
                 break;
 
                 case '6':
+                
+                     /** to disable fond couleur **/ 
+                    $('#showcolorpicker2, #hidecolorpicker1').hide();  
 
-                    $('#showcolorpicker2, #showcolorpicker1').show();
-
-                    $('#hidecolorpicker2, #hidecolorpicker1').hide();
+                    $('#hidecolorpicker2, #showcolorpicker1').show();   
+                    /** to disable fond couleur **/
 
                     $('#plaque_content').css({'backgroundColor': 'transparent', 'backgroundImage': 'url(img/depoli-argent.jpg)'});
 
