@@ -710,7 +710,11 @@ $(function() {
 
                     $('#apercu_content').css('background-color', '#fff');
 
-                    $('.epaisseur').slideUp();
+                    if( value == 17 ){
+                        $('.epaisseur').slideDown();
+                    }else{
+                        $('.epaisseur').slideUp();
+                    }
 
                     $('#fix1,#fix2,#adhesifs').show(); $('#fix1').click();
 
