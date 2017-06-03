@@ -675,4 +675,5 @@ var productID = "<?php echo $productID; ?>";
 <script src="./js/plaquesfunctions.js"></script>
 
 <script src="./js/plaquespro.js?<?php echo mt_rand(); ?>"></script>
+<script src="./js/modif/dev1.js?<?php echo mt_rand(); ?>"></script>
 
