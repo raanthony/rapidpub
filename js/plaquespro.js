@@ -324,9 +324,9 @@ $(function() {
 
                     var taille = $.data(document.body, 'taillePlaque');
                     /** to disable fond couleur **/ 
-                    $('#showcolorpicker2, #hidecolorpicker1').hide();
+                    $('#showcolorpicker2, #hidecolorpicker1').hide(); 
 
-                    $('#hidecolorpicker2, #showcolorpicker1').show();  
+                    $('#hidecolorpicker2, #showcolorpicker1').show();   
                     /** to disable fond couleur **/
 
                     $('#plaque_content').css({'backgroundColor': 'transparent', 'backgroundImage': 'url(img/plexi-' + taille + '.png)'});
