@@ -182,9 +182,11 @@ $_SESSION['prodEpaisseur'] = 3;
 
 							foreach ( $row AS $matiere ) {
                                 $selectedOption = "";
+                                /**
                                 if($matiere['id'] == 3){
                                     $selectedOption ='selected';
                                 } 
+                                */
 								echo '<option value="' . $matiere['id'] . ' '.$selectedOption.'">' . $matiere['nom']. '</option>';
 
 							}
