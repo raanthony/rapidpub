@@ -645,7 +645,6 @@ $_SESSION['prodEpaisseur'] = 3;
     </div>
 
 </div>
-
 <script type="text/javascript">
 
     var productID = "<?php echo $productID; ?>";
