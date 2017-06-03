@@ -797,9 +797,9 @@ $(function() {
                         return false;
 
                     }
-
                 });
-
+                /** stop ajax **/
+                return false;
             }
 
             $.data(document.body, 'taillePlaque', value);
@@ -809,7 +809,7 @@ $(function() {
                 $('#plaque_content').css("background-image", "url(img/plexi-" + value + ".png)");
 
             }
-
+            
             $.ajax({
 
                 type: "POST",
@@ -896,14 +896,12 @@ $(function() {
 
                     $('#plaque_bg').center(true);
 
-                    if ( $.data(document.body, 'matiereVal') == false )
-
+                    if ( $.data(document.body, 'matiereVal') == false ){
                         $('#matiere').ddlist('select', { value: 3 });
 
-                    else
-
+                    }else{
                         $('#matiere').ddlist('select', { value: $.data(document.body, 'matiereVal') });
-
+                    }
                 }
 
             });
