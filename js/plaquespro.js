@@ -173,7 +173,7 @@ $(function() {
             var elemCount = $('#plaque_content .elementContainer').length;
 
             if (thisVal == '') return false;
-
+            console.log("content length matiere change : "+ elemCount);
             if (elemCount >= 1) {
 
                 swal({
@@ -235,7 +235,7 @@ $(function() {
             }
 
             $.data(document.body, 'matiereVal', thisVal);
-            console.log(">>>" + value);
+            console.log("id plaque : " + value);
             switch(value){
 
                 case '1':
@@ -745,7 +745,7 @@ $(function() {
             if (value == '') return false;
 
             var elemCount = $('#plaque_content .elementContainer').length;
-
+            console.log("content length dimension change : "+ elemCount);
             if (elemCount >= 1) {
 
                 swal({
