@@ -1,0 +1,286 @@
+/** SCRIPTS CSS APPLICATION ADHESIFS **/
+div#lettrages_adhesifs_config {
+	font-family: 'Open Sans', sans-serif;
+	width: 755px;
+	min-height: 300px;
+	padding: 5px;
+	background: #F7F6F6 url('../img/area.png') repeat;
+}
+div#lettrages_adhesifs_config div#etape01 {
+	width: 740px;
+	height: 35px;
+	background: #fff;
+	padding: 10px 5px
+}
+div#lettrages_adhesifs_config div#etape02 {
+	width: 750px;
+	height: 120px;
+	background: #fff;
+	margin-top: 5px;
+}
+div#lettrages_adhesifs_config div#etape03 {
+	width: 750px;
+	height: 110px;
+	background: #fff;
+	margin-top: 5px;
+}
+div#lettrages_adhesifs_config div#etape04 {
+	width: 750px;
+	height: 90px;
+	background: #fff;
+	margin-top: 5px;
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_couleurs {
+	width: 500px;
+	height: 90px;
+	background: #fff;
+	padding: 10px 0 0 10px;
+	float: left
+}
+div#lettrages_adhesifs_config div#etape04 div#bloc_fonts {
+	width: 740px;
+	height: 80px;
+	background: #fff;
+	padding: 10px 0 0 3px;
+	position: relative;
+}
+div#lettrages_adhesifs_config div#etape04 div#bloc_fonts div#bloc_subfonts {
+	width: 645px;
+	height: 70px;
+	background: #fff;
+	margin: 0 auto;
+	position: relative
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_couleurs div.minibloc_couleur {
+	width: 18px;
+	height: 18px;
+	border: 1px solid #ccc;
+	float: left;
+	margin: 0 2px 2px 0;
+	cursor: pointer;
+}
+div#lettrages_adhesifs_config div#etape04 div#bloc_fonts li.minibloc_font {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #ccc;
+	float: left;
+	margin: 0 5px 5px 0;
+	cursor: pointer;
+	position: relative
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_couleurs div#finition_couleur {
+	float: right;
+	font-size: 12px;
+	margin: 8px 8px 0 0;
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_couleurs div#finition_couleur select {
+	outline: 0;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_autre {
+	width: 215px;
+	float: left;
+	height: 70px;
+	padding-left: 10px;
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_autre div#finition_options {
+	max-height: 40px;
+	overflow: hidden;
+	float: left;
+	padding-top: 15px;
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_autre label {
+	font-size: 12px;
+}
+div#lettrages_adhesifs_config div#etape03 div#bloc_couleurs div#nom_couleur {
+	width: 150px;
+	height: 30px;
+	font-size: 12px;
+	margin-top: 8px;
+	float: left
+}
+div#lettrages_adhesifs_config div#etape02 div.apercu_container {
+	width: 750px;
+	height: 120px;
+	overflow: hidden;
+	overflow-x: auto;
+	position: relative;
+	background: transparent url('../img/rulers_bg.png') no-repeat;
+}
+div#lettrages_adhesifs_config div#etape02 div.apercu_container div#apercu_texte {
+	height: 60px;
+	width: 710px;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 35px;
+}
+div#lettrages_adhesifs_config div#etape02 div.apercu_container div#apercu_texte img {
+	height: 60px;
+	min-width: 1px;
+	position: relative;
+	float: left;
+}
+div#lettrages_adhesifs_config div.input_container_left {
+	width: 400px;
+	height: 37px;
+	float: left;
+}
+div#lettrages_adhesifs_config div.input_container_right {
+	width: 330px;
+	height: 37px;
+	margin-left: 10px;
+	float: left;
+}
+div#lettrages_adhesifs_config div.input_container_left div.text_left {
+	width: 30px;
+	height: 35px;
+	float: left;
+	background: #fff url('../img/text_16_20.png') center center no-repeat;
+}
+div#lettrages_adhesifs_config div.input_container_right div.text_left {
+	width: 85px;
+	height: 37px;
+	position: relative;
+	float: left;
+	background: #FFFFFF url('../img/textsize_16_16.png') 50% 25% no-repeat;
+	text-align: center;
+	/*border-bottom: solid 2px #c9c9c9;*/
+}
+div#lettrages_adhesifs_config div.input_container_right div.text_left span {
+	font-size: 9px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0
+}
+div#lettrages_adhesifs_config div.input_container_right input[type="text"] {
+	width: 100px;
+	padding: 10px;
+	border: none;
+	background: #f2f2f2;
+	float: left;
+	outline: 0;
+	color: #333;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	border: 1px solid #DDDDDD;
+}
+div#lettrages_adhesifs_config div.input_container_left input[type="text"] {
+	width: 370px;
+	padding: 10px;
+	border: none;
+	background: #f2f2f2;
+	float: left;
+	outline: 0;
+	color: #333;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	border: 1px solid #DDDDDD;
+}
+div#lettrages_adhesifs_config div.input_container_left input[type="text"]:focus, div#lettrages_adhesifs_config div.input_container_right input[type="text"]:focus {
+	box-shadow: 0 0 5px rgba(233, 83, 80, 1);
+	border: 1px solid rgba(233, 83, 80, 1);
+}
+div#lettrages_adhesifs_config div#height_info, div#width_info {
+	/*display: none;*/
+	position: absolute;
+	width: auto;
+	padding: 0 5px;
+	color: #fff;
+	height: 15px;
+	background: #258C45;
+	border: none;
+	display: none;
+	font-size: 9px;
+	text-align: center;
+}
+div#lettrages_adhesifs_config div#height_info {
+	top: 54px;
+	left: 13px;
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+	width: 100%;
+	position: relative;
+
+	/* Optional, required in this case since it's a <ul> element */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.jcarousel ul li {
+	float: left;
+}
+.jcarousel-control-prev {
+	position: absolute;
+	left: 9px;
+	top: 30px;
+}
+.jcarousel-control-next {
+	position: absolute;
+	left: 702px;
+	top: 30px;
+}
+.selectedFont {
+	border: 1px solid red;
+}
+div#lettrages_adhesifs_config div#etape05 {
+	width: 750px;
+	height: 60px;
+	background: #fff;
+	margin-top: 5px;
+}
+div#lettrages_adhesifs_config div#etape05 div#part_01 {
+	width: 260px;
+	float: left;
+	padding: 20px 0 0 20px;
+}
+div#lettrages_adhesifs_config div#etape05 div#part_02 {
+	width: 260px;
+	float: left;
+	/*padding: 20px 0 0 5px;*/
+	height: 60px;
+	width: 135px;
+	text-align: center;
+	background: #F2F2F2;
+}
+div#lettrages_adhesifs_config div#etape05 div#part_02 span {
+	font-size:12px;
+	display: block;
+	margin-top: 20px
+}
+input::-webkit-inner-spin-button {
+    opacity: 1;
+}
+div#lettrages_adhesifs_config div#etape05 div#part_03 {
+	float: left;
+	width: 320px;
+	height: 50px;
+	padding: 10px 0 0 10px;
+}
+div#lettrages_adhesifs_config div#etape05 div#part_03 #prix_ttc, div#lettrages_adhesifs_config div#etape05 div#part_03 #prix_unitaire {
+	float: right;
+}
+.ui-dialog{ 
+	font-size: 80%;
+}
+.mirror {
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+div#couleurs2 {
+	display: none;
+}

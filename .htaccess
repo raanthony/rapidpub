@@ -1,0 +1,3 @@
+#RewriteEngine on
+#RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?rapidpub.synapdev.fr [NC]
+#RewriteRule \.(jpg|jpeg|png|gif)$ https://i.imgur.com/s16VSaW.jpg [NC,R,L]
