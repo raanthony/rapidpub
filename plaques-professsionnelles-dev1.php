@@ -674,5 +674,5 @@ $_SESSION['prodEpaisseur'] = 3;
 
 <script src="./js/plaquespro.js?<?php echo mt_rand(); ?>"></script>
 
-<script src="./js/modiv/dev1.js?<?php echo mt_rand(); ?>"></script>
+<script src="./js/modif/dev1.js?<?php echo mt_rand(); ?>"></script>
 
