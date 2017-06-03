@@ -323,7 +323,7 @@ $(function() {
                     $.data(document.body, 'matierePlaque', 'plexi');
 
                     var taille = $.data(document.body, 'taillePlaque');
-                    /** to disable fond couleur **/
+                    /** to disable fond couleur **/ 
                     $('#showcolorpicker2, #hidecolorpicker1').hide();
 
                     $('#hidecolorpicker2, #showcolorpicker1').show();
