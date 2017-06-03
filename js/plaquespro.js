@@ -3493,6 +3493,12 @@ $(function() {
 
         var color = $(this).attr('data-hexcolor');
 
+        if( $(this).hasClass('colorblock-fond') ){
+            $("#fondColor").colpickSetColor(color);
+            $('#plaque_content').css('background-color', '#' + color);
+            return true;
+        }
+
         $('#elemColor').colpickSetColor(color);
 
         couleurVar = color;

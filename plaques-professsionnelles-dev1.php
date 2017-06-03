@@ -501,15 +501,29 @@ $_SESSION['prodEpaisseur'] = 3;
                         <p style="font-weight:bold;color:#c70077 !important;font-size:12px">Couleur de fond</p>
 
                         <div id="colorpicker-fond">
+                             <div id="color-fond" style="width:134px;padding:4px 0 0 7px;float:left">
+                                <?php
+                                foreach ( $couleurs AS $color ) {
+                                    echo '<div data-hexcolor="' . $color['hexa'] . '" class="colorblock colorblock-fond" title="' . $color['nom'] . '" style="background-color:' . $color['hexa'] . '"></div>';
+                                }
+                                ?>
+                            </div>
+
 
                             <div style="width:134px;padding:4px 0 0 7px;float:left">
 
                                 <?php
-
+                                /**
                                 foreach ( $arrayColors AS $color ) {
 
-                                    echo '<div data-hexcolor="' . $color . '" class="colorfondblock" style="background-color:' . $color . '" title="' . $color . '"></div>';
+                                echo '<div data-hexcolor="' . $color . '" class="colorfondblock" style="background-color:' . $color . '" title="' . $color . '"></div>';
 
+                                }
+                                 */
+                                if(!empty($arrayColors)){
+                                    foreach ( $arrayColors AS $color ) {
+                                        echo '<div data-hexcolor="' . $color . '" class="colorfondblock" style="background-color:' . $color . '" title="' . $color . '"></div>';
+                                    }
                                 }
 
                                 ?>
@@ -672,7 +686,5 @@ $_SESSION['prodEpaisseur'] = 3;
 
 <script src="./js/plaquesfunctions.js"></script>
 
-<script src="./js/plaquespro.js?<?php echo mt_rand(); ?>"></script>
-
+<script src="./js/plaquespro-dev1.js?<?php echo mt_rand(); ?>"></script>
 <script src="./js/modif/dev1.js?<?php echo mt_rand(); ?>"></script>
-
