@@ -511,9 +511,14 @@ $(function() {
 
                 case '12':
 
-                    $('#showcolorpicker2, #showcolorpicker1').show();
+                    /*
+                     $('#showcolorpicker2, #showcolorpicker1').show();
 
-                    $('#hidecolorpicker2, #hidecolorpicker1').hide();
+                     $('#hidecolorpicker2, #hidecolorpicker1').hide();
+                     */
+                    $('#showcolorpicker2, #showcolorpicker1').hide();
+
+                    $('#hidecolorpicker2, #hidecolorpicker1').show();
 
                     $('#plaque_content').css({'backgroundColor': 'transparent', 'backgroundImage': 'url(img/depoli-or.jpg)'});
 
