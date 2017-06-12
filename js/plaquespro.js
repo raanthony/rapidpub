@@ -702,7 +702,7 @@ $(function() {
 
                 break;
 
-                default:
+                default: 
 
                     $('#plaque_content').css("background-image", "transparent");
 
