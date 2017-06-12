@@ -74,6 +74,10 @@ $_SESSION['prodEpaisseur'] = 3;
 
 <link rel="stylesheet" href="./fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
+<style type="text/css">
+    .textDimensionCalculation {position: fixed;visibility: hidden;height: auto;width: auto;white-space: nowrap;position: absolute;bottom: 50px;background: red;color: #fff;font-size: 63px;z-index:-50}
+</style>
+
 <div id="plaques_config">
 
     <div class="container-left">
@@ -300,6 +304,15 @@ $_SESSION['prodEpaisseur'] = 3;
 
                 </select>
 
+                <style type="text/css">
+                    <?php foreach ($polices as $police): ?>
+                        <?php $fontname = explode( '.', $police ); ?>
+                        @font-face {
+                            font-family: '<?php echo $fontname[0]; ?>';
+                            src: url('./fonts/<?php echo $police ?>');
+                        }
+                    <?php endforeach; ?>
+                </style>
             </div>
 
             <div class="step_container" style="width:145px"><span class="step">3</span><span class="step_title">Choisir une police</span></div>
@@ -643,7 +656,6 @@ $_SESSION['prodEpaisseur'] = 3;
         </div>
 
     </div>
-
 </div>
 <script type="text/javascript">
 
@@ -683,7 +695,24 @@ $_SESSION['prodEpaisseur'] = 3;
 
 <script src="./js/icheck.min.js"></script>
 
-<script src="./js/plaquesfunctions.js"></script>
+<script src="./js/plaquesfunctions-dev1.js"></script>
 
 <script src="./js/plaquespro-dev1.js?<?php echo mt_rand(); ?>"></script>
 <script src="./js/modif/dev1.js?<?php echo mt_rand(); ?>"></script>
+
+<style type="text/css">
+    div.elementContainer img {
+        max-width: 100%;
+        /*height: 100% !important;*/
+    }
+    #font-demo-list{visibility: hidden;position:fixed;top:0px;left:0px;}
+</style>
+
+<div id="font-demo-list">
+    <?php foreach ($polices as $police): ?>
+        <?php $fontname = explode( '.', $police ); ?>
+        <div style="font-family:<?php echo $fontname[0]; ?>" class="font-demo-test"><?php echo $fontname[0]; ?></div>
+    <?php endforeach; ?>
+
+</div>
+<div class="textDimensionCalculation"></div>

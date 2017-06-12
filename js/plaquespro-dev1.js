@@ -2829,7 +2829,6 @@ $(function() {
                 },
 
                 success: function(result) {
-
                     if ($('.selectedElement').hasClass('typeText')) {
 
                         var selHeight = $('.selectedElement').height();
@@ -2856,7 +2855,9 @@ $(function() {
 
                     $('#' + result['id']).parent('div').addClass('selectedElement');
 
+                    var $oSelectedElement = $(".selectedElement");
                     showfirstElem();
+                    $oSelectedElement.hide();
 
                     $('.selectedElement').find('.elemContent').attr('data-colorcode', '#000000');
 
@@ -2924,7 +2925,31 @@ $(function() {
 
                     }
 
-                    $('.selectedElement').height('auto').width(newSize);
+                    var $textDimensionCalculation = $(".textDimensionCalculation");
+                    var policeName = $("#police").val().split('.')[0];
+                    $textDimensionCalculation.html(textVal);
+                    $textDimensionCalculation.css({
+                        'font-family' :  policeName
+                    });
+
+                    setTimeout(function(){
+                        var newWidth = $textDimensionCalculation.outerWidth();
+                        var newHeight = $textDimensionCalculation.outerHeight();
+                        console.warn("w:" + newWidth);
+                        console.warn("h:" + newHeight);
+                        $oSelectedElement.width(newWidth);
+                        $oSelectedElement.height('auto');
+                        $oSelectedElement.center(true);
+                        $oSelectedElement.show();
+                    },200)
+
+                    /**
+                     * @todo remove after test
+                     * **/
+                    //return;
+
+                    //$('.selectedElement').width(newWidth);
+                    //$('.selectedElement').height(newSize).width('auto');
 
                     var nbrLayers = $('ul#calques li').length;
 
